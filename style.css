@@ -1,6 +1,7 @@
 body {
   background: url("https://wallpaperaccess.com/full/4321869.jpg") ;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .main {
@@ -14,13 +15,14 @@ body {
   width: 50%;
 }
 .main #name {
-  /* background: #fff; */
-  border: 3px solid #222;
+  /*background: #fff;
+  */border: 3px solid #222;
   color: rgb(205, 197, 197);
   margin-left: 25%;
-  min-height: 18px;
+  min-height: 40px;
   width: 50%;
   font-size: 34px;
+
 }
 .main #generate {
   background: #0088cc;
@@ -29,4 +31,5 @@ body {
   color: #350f0f;
   margin-top: 20px;
   padding: 10px;
+  min-width: 200px;
 }
