@@ -1,0 +1,32 @@
+body {
+  background: url("https://wallpaperaccess.com/full/4321869.jpg") ;
+  background-size: cover;
+}
+
+.main {
+  background: rgba(239, 228, 228,0.3);
+  border: 1px solid #cecece;
+  color: rgb(13, 13, 13);
+  left: 25%;
+  padding: 50px 0;
+  position: relative;
+  text-align: center;
+  width: 50%;
+}
+.main #name {
+  /* background: #fff; */
+  border: 3px solid #222;
+  color: rgb(205, 197, 197);
+  margin-left: 25%;
+  min-height: 18px;
+  width: 50%;
+  font-size: 34px;
+}
+.main #generate {
+  background: #0088cc;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: #350f0f;
+  margin-top: 20px;
+  padding: 10px;
+}
