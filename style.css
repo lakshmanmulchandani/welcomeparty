@@ -50,13 +50,15 @@ body {
 }
 .main #name {
   /*background: #fff;
-  */border: 3px solid #222;
-  color: rgb(205, 197, 197);
+  */border: 1px solid #222;
+  color: rgb(32, 19, 221);
   margin-left: 25%;
   min-height: 45px;
   width: 50%;
   font-size: 40px;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 0.36px rgb(5, 5, 5);
+  font-family: 'Lora', serif;
+  font-weight:500;
 
 }
 .main #generate {
