@@ -2,8 +2,15 @@ body {
   background: url("https://wallpaperaccess.com/full/4321869.jpg") ;
   background-size: cover;
   background-repeat: no-repeat;
-}
+  font-family: 'Poppins', serif;
 
+}
+.title
+{
+  font-family: 'Pacifico', serif;
+  font-size: 48px;
+  text-shadow: 2px 2px 2px #aaa;
+}
 .main {
   background: rgba(239, 228, 228,0.5);
   border: 1px solid #cecece;
@@ -13,6 +20,7 @@ body {
   position: relative;
   text-align: center;
   width: 50%;
+
 }
 
 .main:before {
@@ -28,9 +36,10 @@ body {
   */border: 3px solid #222;
   color: rgb(205, 197, 197);
   margin-left: 25%;
-  min-height: 40px;
+  min-height: 45px;
   width: 50%;
-  font-size: 34px;
+  font-size: 40px;
+  -webkit-text-stroke: 1px black;
 
 }
 .main #generate {
@@ -41,4 +50,5 @@ body {
   margin-top: 20px;
   padding: 10px;
   min-width: 200px;
+  cursor: pointer;
 }
