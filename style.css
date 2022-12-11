@@ -11,16 +11,33 @@ body {
   font-size: 48px;
   text-shadow: 2px 2px 2px #aaa;
 }
-.main {
-  background: rgba(239, 228, 228,0.5);
-  border: 1px solid #cecece;
-  color: rgb(13, 13, 13);
-  left: 25%;
-  padding: 50px 0;
-  position: relative;
-  text-align: center;
-  width: 50%;
 
+@keyframes color {
+  0%   { background: rgba(51, 204, 204,0.45); }
+  20%  { background: rgba(51, 204, 54,0.45); }
+  40%  { background: rgba(184, 204, 51,0.45); }
+  60%  { background: rgba(252, 202, 0,0.45); }
+  80%  { background: rgba(51, 204, 54,0.45); }
+  100% { background: rgba(239, 228, 228,0.5); }
+}
+.main {
+ background: rgba(239, 228, 228,0.5);
+ border: 1px solid #cecece;
+ color: rgb(13, 13, 13);
+ left: 25%;
+ padding: 50px 0;
+ position: relative;
+ text-align: center;
+ width: 50%;
+ backdrop-filter: blur(4px);
+ margin-top: 5%;
+
+}
+
+.colour-changer
+{
+  animation: color 15s infinite linear;
+  -webkit-animation: color 5s infinite linear;
 }
 
 .main:before {
@@ -28,8 +45,8 @@ body {
   position: absolute;
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-  filter: blur(10px);
-
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
 }
 .main #name {
   /*background: #fff;
@@ -51,4 +68,46 @@ body {
   padding: 10px;
   min-width: 200px;
   cursor: pointer;
+}
+
+
+.dot-typing {
+  display: none;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  left: 0px;
+  left:50px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #0d0a18;
+  color: #0d0a18;
+  box-shadow: 1px 0 0 0 #0d0a18, 16px 0 0 0 #0d0a18, 30px 0 0 0 #0d0a18;
+  animation: dot-typing 2s infinite linear;
+  -webkit-animation: dot-typing 2s infinite linear;
+}
+
+@keyframes dot-typing {
+  0% {
+    box-shadow: 500px 0 0 0 #0d0a18, 16px 0 0 0 #0d0a18, 30px 0 0 0 #0d0a18;
+  }
+  16.667% {
+    box-shadow: 1px -10px 0 0 #0d0a18, 500px 0 0 0 #0d0a18,500px 0 0 0 #0d0a18;
+  }
+  33.333% {
+    box-shadow: 1px 0 0 0 #0d0a18, 16px 0 0 0 #0d0a18, 30px 0 0 0 #0d0a18;
+  }
+  50% {
+    box-shadow: 1px 0 0 0 #0d0a18, 16px -10px 0 0 #0d0a18, 30px 0 0 0 #0d0a18;
+  }
+  66.667% {
+    box-shadow: 1px 0 0 0 #0d0a18, 16px 0 0 0 #0d0a18, 30px 0 0 0 #0d0a18;
+  }
+  83.333% {
+    box-shadow: 1px 0 0 0 #0d0a18, 16px 0 0 0 #0d0a18, 30px -10px 0 0 #0d0a18;
+  }
+  100% {
+    box-shadow: 1px 0 0 0 #0d0a18, 16px 0 0 0 #0d0a18, 30px 0 0 0 #0d0a18;
+  }
 }

@@ -138,6 +138,10 @@ let getNames = (myArray, num) => {
   }
 };
 
+let removeName = () => {
+  document.getElementById("name").innerHTML = "";
+  return true;
+};
 // then display them to the user
 let showName = (finalName) => {
   if (typeof finalName == "string") {
@@ -156,8 +160,12 @@ let getRandomInt = (min, max) => {
 // when the user clicks 'generate'
 document.getElementById("generate").addEventListener("click", () => {
   // create new random nums to use as index in array
+  const dt = document.getElementsByClassName("dot-typing")[0];
+  dt.style.display = "block";
+  removeName();
   let firstRandNum = getRandomInt(0, firstLength - 1);
-
+  const main = document.getElementsByClassName("main")[0];
+  main.classList.add("colour-changer");
   // use those nums to get values from arrays
   let firstName = firstNames[firstRandNum];
 
@@ -165,7 +173,11 @@ document.getElementById("generate").addEventListener("click", () => {
     // create final name
     let finalName = firstName;
     // set the value of paragragh element
-    showName(finalName);
+    setTimeout(() => {
+      main.classList.remove("colour-changer");
+      dt.style.display = "none";
+      showName(finalName);
+    }, 5000);
   } else {
     console.error("values were undefined");
     console.error("firstRandNum " + firstRandNum);
