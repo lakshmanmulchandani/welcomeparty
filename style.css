@@ -13,7 +13,7 @@ body {
 }
 
 @keyframes color {
-  0%   { background: rgba(51, 204, 204,0.45); }
+  0%   { background: rgba(239, 228, 228,0.5); }
   20%  { background: rgba(51, 204, 54,0.45); }
   40%  { background: rgba(184, 204, 51,0.45); }
   60%  { background: rgba(252, 202, 0,0.45); }
